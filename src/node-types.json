@@ -1,0 +1,54 @@
+[
+  {
+    "type": "definition_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "group_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "reference_group",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "definition_name",
+          "named": true
+        },
+        {
+          "type": "group_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "definition_name",
+          "named": true
+        },
+        {
+          "type": "reference_group",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "group",
+    "named": false
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "name": "tree-sitter-paketreferences",
+  "version": "0.1.0",
+  "description": "Tree Sitter parser for paket referencesfiles",
+  "main": "grammar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amcguier/tree-sitter-paketreferences.git"
+  },
+  "keywords": [
+    "paket",
+    "tree-sitter"
+  ],
+  "author": "Andrew McGuier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amcguier/tree-sitter-paketreferences/issues"
+  },
+  "homepage": "https://github.com/amcguier/tree-sitter-paketrefereces#readme",
+  "dependencies": {
+    "nan": "^2.17.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.8"
+  }
+}

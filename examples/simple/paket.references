@@ -1,0 +1,6 @@
+Fsharp.Core
+Newtonsoft.Json1
+
+group Packages
+      Fable.Core
+      Fable.Remoting

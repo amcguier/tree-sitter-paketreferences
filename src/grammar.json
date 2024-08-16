@@ -1,0 +1,73 @@
+{
+  "name": "PaketReferences",
+  "rules": {
+    "source_file": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SYMBOL",
+        "name": "_reference_statement"
+      }
+    },
+    "_reference_statement": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "reference_group"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_reference_definition"
+        }
+      ]
+    },
+    "reference_group": {
+      "type": "PREC_RIGHT",
+      "value": 0,
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "group"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "group_name"
+          },
+          {
+            "type": "REPEAT1",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_reference_definition"
+            }
+          }
+        ]
+      }
+    },
+    "group_name": {
+      "type": "PATTERN",
+      "value": "[a-zA-Z0-9_\\-\\.]+"
+    },
+    "definition_name": {
+      "type": "PATTERN",
+      "value": "[a-zA-Z0-9_\\-\\.]+"
+    },
+    "_reference_definition": {
+      "type": "SYMBOL",
+      "name": "definition_name"
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}
+
